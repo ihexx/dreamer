@@ -5,6 +5,7 @@ import pathlib
 import sys
 from args_handler import define_config
 from agent import Dreamer
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ['MUJOCO_GL'] = 'egl'
 

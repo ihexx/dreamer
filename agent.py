@@ -10,7 +10,7 @@ import models
 import tools
 
 
-class Dreamer(tools.Module):
+class Dreamer(models.Module):
 
     def __init__(self, config, datadir, actspace, writer):
         self._c = config
