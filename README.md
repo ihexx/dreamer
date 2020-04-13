@@ -37,17 +37,18 @@ efficiently learn a long-horizon policy.
 Get dependencies:
 
 ```
-pip3 install --user tensorflow-gpu==2.1.0
-pip3 install --user tensorflow_probability
-pip3 install --user git+git://github.com/deepmind/dm_control.git
-pip3 install --user pandas
-pip3 install --user matplotlib
+pip install tensorflow-gpu==2.1.0
+pip install tensorflow_probability
+pip install git+git://github.com/deepmind/dm_control.git
+pip install pandas
+pip install matplotlib
+pip install box2d-py
 ```
 
 Train the agent:
 
 ```
-python3 dreamer.py --logdir ./logdir/dmc_walker_walk/dreamer/1 --task dmc_walker_walk
+python3 main.py --logdir ./logdir/dmc_walker_walk/dreamer/1 --task dmc_walker_walk
 ```
 
 Generate plots:
